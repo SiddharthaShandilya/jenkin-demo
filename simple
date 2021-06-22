@@ -1,0 +1,3 @@
+start /b C:\Users\gg415\OneDrive\Desktop\RedHat.lnk
+timeout 60
+ssh root@192.168.29.188
