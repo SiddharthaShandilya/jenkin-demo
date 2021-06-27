@@ -1,3 +1,16 @@
-start /b C:\Users\gg415\OneDrive\Desktop\RedHat.lnk
-timeout 60
-ssh root@192.168.29.188
+sudo cat <<EOF> > .etc.yum.repos.d/docker.repo
+[dokcer]
+name=docker
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
+gpgcheck=0
+EOF
+
+sudo yum install docker-ce --nobest -y
+
+sudo systemctl restart docker
+
+sudo docker ps
+
+
+
+
