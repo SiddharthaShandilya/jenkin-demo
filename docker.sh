@@ -5,3 +5,5 @@ sudo systemctl restart docker
 sudo docker ps
 
 docker run -dit httpd
+
+sudo docker ps
